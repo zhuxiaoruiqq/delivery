@@ -1,0 +1,6 @@
+export const RECEIVE_USERINFO ='receive_userInfo'
+export const RECEIVE_ADDRESS ='receive_address'
+export const RECEIVE_CATEGORY ='receive_category'
+export const RECEIVE_SHOPLIST ='receive_shopList'
+export const RECEIVE_SEARCHITEM ='receive_searchItem'
+export const RECEIVE_SHOPINFO ='receive_shopInfo'

@@ -1,0 +1,28 @@
+<template>
+  <div id="app">
+    <router-view/>
+    <FooterGuide v-show="$route.meta.showFooter"/>
+  </div>
+</template>
+
+<script>
+import FooterGuide from './components/FooterGuide/FooterGuide.vue'
+export default {
+  components:{
+    FooterGuide
+  },
+  name: 'App',
+  mounted(){
+    this.$store.dispatch('getAddress')
+    this.$store.dispatch('getCategory')
+    this.$store.dispatch('getShopList')
+  }
+}
+</script>
+
+<style>
+#app{
+  width:100%;
+  height:100%;
+}
+</style>
